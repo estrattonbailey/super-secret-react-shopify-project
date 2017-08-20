@@ -1,0 +1,23 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "lodash",
+    "syntax-dynamic-import",
+    ['module-resolver', {
+      'root': ['.'],
+      'alias': {
+        'Components': 'js/components',
+        'Demos': 'js/demos',
+        'Pages': 'js/pages',
+        'Icons': 'js/icons',
+        'Util': 'js/util',
+        'Root': 'js',
+      }
+    }]
+  ],
+  "presets": [
+    "es2015",
+    "react"
+  ]
+}
